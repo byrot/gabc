@@ -1,0 +1,341 @@
+% !TEX TS-program = lualatex
+% !TEX encoding = UTF-8
+
+\documentclass[12pt]{article} % use larger type; default would be 10pt
+
+\usepackage{fontspec}
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{geometry} % See geometry.pdf to learn the layout options. There are lots.
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+\usepackage{gregoriotex} % for gregorio score inclusion
+\usepackage{fullpage} % to reduce the margins
+%\usepackage{palatino}
+
+% custom settings for section headlines
+\usepackage{titlesec}
+\titleformat{\section}[block]{\huge\sc\filcenter}{}{1em}{}
+
+% macro info for informational subtitles
+\newcommand{\info}[2]{\large\textsc{#1}\hfill{\em #2}}
+
+% custom settings for ToC: no numbers, title, font style, dots
+\usepackage{tocloft}
+\setcounter{secnumdepth}{0}
+\renewcommand{\contentsname}{\hfil\huge\sc Obsah\hfil\par\vspace{1em}}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsecfont}{\rm}
+\renewcommand{\cftsecpagefont}{\rm}
+
+% define symbols for Versicle and Response
+\usepackage{fontspec}
+\newcommand{\textjuni}[1]{{\fontspec{Junicode}#1}}
+\newcommand{\V}{\textjuni{\char"2123.}}
+\newcommand{\R}{\textjuni{\char"211F.}}
+
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TITLE PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+  \begin{center}
+
+    { \vspace*{60 mm} }
+    \begin{Huge}\textbf{K Y R I A L E}\end{Huge}
+
+    \vspace{30 mm}
+    \begin{Large}{Latinské mešní zpěvy v~gregoriánské notaci}\end{Large}
+
+    \vspace{110 mm}
+    \begin{large}{A.~D.~2015}\end{large}
+
+  \end{center}
+\end{titlepage}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% GLOBAL SETTINGS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Here we set the space around the initial.
+\setspaceafterinitial{2.2mm plus 0em minus 0em}
+\setspacebeforeinitial{2.2mm plus 0em minus 0em}
+
+% Here we set the initial font.
+\def\greinitialformat#1{{\fontsize{43}{43}\selectfont #1}}
+
+% We set red lines here, comment it if you want black ones.
+\redlines
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% VIDI AQUAM %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Vidi Aquam}
+\info{}{V~době velikonoční}
+
+\vspace{0.5 cm}
+\includescore{Antienne/VidiAquam}
+
+\vspace{1 cm}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MISSA I. %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Ordinárium I.}
+\info{Lux et origo}{V~době velikonoční}
+
+\vspace{0.5 cm}
+\includescore{Kyriale/Kyrie-I}
+
+\vspace{1 cm}
+\includescore{Kyriale/Gloria-I}
+
+\vspace{1 cm}
+\includescore{Kyriale/Sanctus-I}
+
+\vspace{1 cm}
+\includescore{Kyriale/Agnus-I}
+
+\vspace{0.5 cm}
+\commentary{{\small \em{Od Bílé soboty do soboty oktávu velikonočního včetně}}}
+
+\vspace{0.5 cm}
+\includescore{Kyriale/Ite-I}
+
+\vspace{0.5 cm}
+
+\commentary{{\small \emph{Od neděle 1. po Velikonocích do Božího hodu Svatodušního včetně}}}
+\vspace{0.5 cm}
+\includescore{Kyriale/Ite-Ib}
+
+
+\vspace{1 cm}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ASPERGES ME %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Asperges Me}
+\info{}{Mimo dobu velikonoční}
+
+\vspace{0.5 cm}
+\includescore{Antienne/AspergesMe}
+
+\vspace{1 cm}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MISSA II. %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Ordinárium II.}
+\info{???}{Svátky???}
+
+\vspace{0.5 cm}
+\includescore{Kyriale/Kyrie-II}
+
+\vspace{1 cm}
+\includescore{Kyriale/Gloria-II}
+
+\vspace{1 cm}
+\includescore{Kyriale/Sanctus-II}
+
+\vspace{1 cm}
+\includescore{Kyriale/Agnus-II}
+
+\vspace{1 cm}
+\includescore{Kyriale/Ite-II}
+
+
+\vspace{1 cm}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MISSA IV. %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Ordinárium IV.}
+%\begin{large}\textsc{Lux et origo}\hfill{\em V~době velikonoční}\end{large}
+
+\vspace{0.5 cm}
+\includescore{Kyriale/Kyrie-IV}
+
+\vspace{1 cm}
+\includescore{Kyriale/Gloria-IV}
+
+\vspace{1 cm}
+\includescore{Kyriale/Sanctus-IV}
+
+\vspace{1 cm}
+\includescore{Kyriale/Agnus-IV}
+
+\vspace{1 cm}
+\includescore{Kyriale/Ite-IV}
+
+
+\vspace{1 cm}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MISSA VIII. %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Ordinárium VIII.}
+\info{???}{???}
+
+\vspace{0.5 cm}
+\includescore{Kyriale/Kyrie-VIII}
+
+\vspace{1 cm}
+\includescore{Kyriale/Gloria-VIII}
+
+\vspace{1 cm}
+\includescore{Kyriale/Sanctus-VIII}
+
+\vspace{1 cm}
+\includescore{Kyriale/Agnus-VIII}
+
+\vspace{1 cm}
+\includescore{Kyriale/Ite-VIII}
+
+
+\vspace{1 cm}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MISSA IX. %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Ordinárium IX.}
+\info{???}{???}
+
+\vspace{0.5 cm}
+\includescore{Kyriale/Kyrie-IX}
+
+\vspace{1 cm}
+\includescore{Kyriale/Gloria-IX}
+
+\vspace{1 cm}
+\includescore{Kyriale/Sanctus-IX}
+
+\vspace{1 cm}
+\includescore{Kyriale/Agnus-IX}
+
+\vspace{1 cm}
+\includescore{Kyriale/Ite-IX}
+
+
+\vspace{1 cm}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MISSA XI. %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Ordinárium XI.}
+\info{???}{???}
+
+\vspace{0.5 cm}
+\includescore{Kyriale/Kyrie-XI}
+
+\vspace{1 cm}
+\includescore{Kyriale/Gloria-XI}
+
+\vspace{1 cm}
+\includescore{Kyriale/Sanctus-XI}
+
+\vspace{1 cm}
+\includescore{Kyriale/Agnus-XI}
+
+\vspace{1 cm}
+\includescore{Kyriale/Ite-XI}
+
+
+\vspace{1 cm}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MISSA XVII. %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Ordinárium XVII.}
+\info{???}{???}
+
+\vspace{0.5 cm}
+\includescore{Kyriale/Kyrie-XVIIa}
+
+\vspace{1 cm}
+\includescore{Kyriale/Sanctus-XVII}
+
+\vspace{1 cm}
+\includescore{Kyriale/Agnus-XVII}
+
+
+\vspace{1 cm}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% REQUIEM %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Requiem}
+\info{???}{???}
+
+\vspace{0.5 cm}
+\includescore{Requiem/Kyrie}
+
+\vspace{1 cm}
+\includescore{Requiem/Sanctus}
+
+\vspace{1 cm}
+\includescore{Requiem/AgnusDei}
+
+
+\vspace{1 cm}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CREDO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Krédo I.}
+
+\vspace{0.5 cm}
+\includescore{Kyriale/Credo-I}
+
+\vspace{1 cm}
+
+
+
+\section{Krédo II.}
+
+\vspace{0.5 cm}
+\includescore{Kyriale/Credo-II}
+
+\vspace{1 cm}
+
+
+
+\section{Krédo III.}
+
+\vspace{0.5 cm}
+\includescore{Kyriale/Credo-III}
+
+\vspace{1 cm}
+
+
+
+\section{Krédo IV.}
+
+\vspace{0.5 cm}
+\includescore{Kyriale/Credo-IV}
+
+\vspace{1 cm}
+
+
+
+
+
+
+
+\newpage
+\tableofcontents
+
+\end{document}
