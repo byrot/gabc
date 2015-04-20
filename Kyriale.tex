@@ -9,7 +9,6 @@
 \geometry{a4paper} % or letterpaper (US) or a5paper or....
 \usepackage{gregoriotex} % for gregorio score inclusion
 \usepackage{fullpage} % to reduce the margins
-%\usepackage{palatino}
 
 % custom settings for section headlines
 \usepackage{titlesec}
@@ -29,8 +28,13 @@
 % define symbols for Versicle and Response
 \usepackage{fontspec}
 \newcommand{\textjuni}[1]{{\fontspec{Junicode}#1}}
-\newcommand{\V}{\textjuni{\char"2123.}}
-\newcommand{\R}{\textjuni{\char"211F.}}
+\newcommand{\V}{\textjuni{\char"2123.~}}
+\newcommand{\R}{\textjuni{\char"211F.~}}
+
+% paragraph settings
+\usepackage{parskip}
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0em}
 
 
 
@@ -67,6 +71,21 @@
 % We set red lines here, comment it if you want black ones.
 \redlines
 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ASPERGES ME %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Asperges Me}
+\info{}{Mimo dobu velikonoční}
+
+\vspace{0.5 cm}
+\includescore{Antienne/AspergesMe}
+\vspace{1 cm}
+
+\input{Autre/OstendeNobisApresAsperges}
+
+\vspace{1 cm}
 
 
 
@@ -111,18 +130,6 @@
 \vspace{0.5 cm}
 \includescore{Kyriale/Ite-Ib}
 
-
-\vspace{1 cm}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ASPERGES ME %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Asperges Me}
-\info{}{Mimo dobu velikonoční}
-
-\vspace{0.5 cm}
-\includescore{Antienne/AspergesMe}
 
 \vspace{1 cm}
 
