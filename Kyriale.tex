@@ -15,7 +15,7 @@
 \titleformat{\section}[block]{\huge\sc\filcenter}{}{1em}{}
 
 % macro info for informational subtitles
-\newcommand{\info}[2]{\large\textsc{#1}\hfill{\em #2}}
+\newcommand{\info}[2]{{\textsc{#1}\hfill{\em #2}}}
 
 % custom settings for ToC: no numbers, title, font style, dots
 \usepackage{tocloft}
@@ -58,6 +58,12 @@
 \end{titlepage}
 
 
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\setcounter{page}{0}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% GLOBAL SETTINGS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -76,14 +82,11 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% ASPERGES ME %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\section{Asperges Me}
+\section{Asperges me}
 \info{}{Mimo dobu velikonoční}
 
 \vspace{0.5 cm}
 \includescore{Antienne/AspergesMe}
-\vspace{1 cm}
-
-\input{Autre/OstendeNobisApresAsperges}
 
 \vspace{1 cm}
 
@@ -91,11 +94,14 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% VIDI AQUAM %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Vidi Aquam}
+\section{Vidi aquam}
 \info{}{V~době velikonoční}
 
 \vspace{0.5 cm}
 \includescore{Antienne/VidiAquam}
+
+\vspace{1 cm}
+\input{Autre/OstendeNobisApresAsperges}
 
 \vspace{1 cm}
 
@@ -103,7 +109,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% MISSA I. %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Ordinárium I.}
+\section{Ordinarium miss\ae{} I.}
 \info{Lux et origo}{V~době velikonoční}
 
 \vspace{0.5 cm}
@@ -112,7 +118,8 @@
 \vspace{1 cm}
 \includescore{Kyriale/Gloria-I}
 
-\vspace{1 cm}
+%\vspace{1 cm}
+\newpage
 \includescore{Kyriale/Sanctus-I}
 
 \vspace{1 cm}
@@ -137,7 +144,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% MISSA II. %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Ordinárium II.}
+\section{Ordinarium miss\ae{} II.}
 \info{???}{Svátky???}
 
 \vspace{0.5 cm}
@@ -155,6 +162,9 @@
 \vspace{1 cm}
 \includescore{Kyriale/Ite-II}
 
+\vspace{1 cm}
+\includescore{Kyriale/BenedicamusDomino-II}
+
 
 \vspace{1 cm}
 
@@ -163,8 +173,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% MISSA IV. %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Ordinárium IV.}
-%\begin{large}\textsc{Lux et origo}\hfill{\em V~době velikonoční}\end{large}
+\section{Ordinarium miss\ae{} IV.}
+\info{???}{???}
 
 \vspace{0.5 cm}
 \includescore{Kyriale/Kyrie-IV}
@@ -189,7 +199,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% MISSA VIII. %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Ordinárium VIII.}
+\section{Ordinarium miss\ae{} VIII.}
 \info{???}{???}
 
 \vspace{0.5 cm}
@@ -214,7 +224,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% MISSA IX. %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Ordinárium IX.}
+\section{Ordinarium miss\ae{} IX.}
 \info{???}{???}
 
 \vspace{0.5 cm}
@@ -239,7 +249,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% MISSA XI. %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Ordinárium XI.}
+\section{Ordinarium miss\ae{} XI.}
 \info{???}{???}
 
 \vspace{0.5 cm}
@@ -264,7 +274,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% MISSA XVII. %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Ordinárium XVII.}
+\section{Ordinarium miss\ae{} XVII.}
 \info{???}{???}
 
 \vspace{0.5 cm}
@@ -284,9 +294,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% REQUIEM %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Requiem}
-\info{???}{???}
+%\info{???}{???}
 
-\vspace{0.5 cm}
+%\vspace{0.5 cm}
 \includescore{Requiem/Kyrie}
 
 \vspace{1 cm}
@@ -302,7 +312,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% CREDO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Krédo I.}
+\section{Credo I.}
+\info{}{Vhodné k~ordináriu I., II. a III.}
 
 \vspace{0.5 cm}
 \includescore{Kyriale/Credo-I}
@@ -311,7 +322,8 @@
 
 
 
-\section{Krédo II.}
+\section{Credo II.}
+\info{}{Vhodné k~ordináriu I., II. a III.}
 
 \vspace{0.5 cm}
 \includescore{Kyriale/Credo-II}
@@ -320,7 +332,8 @@
 
 
 
-\section{Krédo III.}
+\section{Credo III.}
+\info{}{Vhodné k~ordináriu I., II. a III.}
 
 \vspace{0.5 cm}
 \includescore{Kyriale/Credo-III}
@@ -329,7 +342,8 @@
 
 
 
-\section{Krédo IV.}
+\section{Credo IV.}
+\info{}{Vhodné k~ordináriu I., II. a III.}
 
 \vspace{0.5 cm}
 \includescore{Kyriale/Credo-IV}
@@ -339,10 +353,70 @@
 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ANTIPHONES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+\section{Regina c\ae{}li}
+
+\includescore{Antienne/ReginaCaeli-simple}
+
+\vspace{1 cm}
+
+
+
+\section{Rorate c\ae{}li}
+
+\includescore{Autre/RorateCaeli-Complet}
+
+\vspace{1 cm}
+
+
+
+\section{Attende Dómine}
+
+\includescore{Antienne/AttendeDomine}
+
+\vspace{1 cm}
+
+
+
+\section{Salve Regina}
+
+\includescore{Antienne/SalveRegina-simple}
+
+\vspace{1 cm}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TABLE OF CONTENTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newpage
 \tableofcontents
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% COPYRIGHT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+\begin{centering}
+\setlength{\parskip}{1em}
+\vspace{16cm}
+
+	KYRIALE -- Latinské mešní zpěvy v~gregoriánské notaci
+
+	Sazba: P.~Jacques Peron, Andrew Hinkley, Tomáš Jirotka\\
+	Editor: Tomáš Jirotka
+
+	Vydání první.\\
+	Dáno do tisku v~Praze o~svátku Nanebevstoupení Páně roku 2015.
+
+	{\tt http://kyriale.fyzika.net}
+
+\end{centering}
+
+
 
 \end{document}
