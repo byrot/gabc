@@ -12,6 +12,11 @@ all: clean $(TEXSCORES) $(MAINTEX).pdf
 %.pdf:
 	$(LATEX) $(patsubst %.pdf,%.tex,$@)
 
+%.a5: $(patsubst %.a5,%.pdf,$@)
+	pdfjam --scale 1.10 $(patsubst %.a5,%.pdf,$@) --outfile $(patsubst %.a5,%.110.pdf,$@)
+	pdfbook --suffix a5 $(patsubst %.a5,%.110.pdf,$@)
+	rm -f $(patsubst %.a5,%.110.pdf,$@)
+
 %.tex:
 	$(GREGORIO) $(patsubst %.tex,%.gabc,$@)
 
