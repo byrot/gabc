@@ -1,2 +1,8 @@
 *~
 *-auto.tex
+*.pdf
+*.aux
+*.gaux
+*.gtex
+*.log
+.DS_Store
