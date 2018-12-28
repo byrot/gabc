@@ -3,6 +3,7 @@
 *.gtex
 *.aux
 *.log
+*.glog
 *.toc
 *.swp
 *.gaux
